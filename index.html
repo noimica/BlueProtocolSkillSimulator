@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index.css">
+    <title>BLUE PROTOCOLスキルシミュレータ</title>
+</head>
+<body>
+    <div class="topnav">
+        <table>
+            <tr>
+                <td>
+                    <select id="job">
+                        <option value="AF">イージスファイター</option>
+                        <option value="TS">ツインストライカー</option>
+                        <option value="BA">ブラストアーチャー</option>
+                        <option value="SC">スペルキャスター</option>
+                    </select>
+                    <button id="reset">reset</button>
+                </td>
+                <td>最大スキルポイント : <input id="max_point" type="number" value="148"/></td>
+                <td>使用スキルポイント : <span id="used_point">0</span></td>
+                <td>残りスキルポイント : <span id="last_point">148</span></td>
+                <td><button id="geturl">geturl</button></td>
+            </tr>
+        </table>
+    </div>
+    <div id="MyAppRoot"></div>
+    <div class="tooltip" id="tooltip"></div>
+    <div class="popup">
+    </div>
+    <div class="content">
+        <p>サンプルテキスト、サンプルテキスト、サンプルテキスト、サンプルテキスト</p>
+        <button id="copy">コピー</button>
+        <button id="close">閉じる</button>
+    </div>
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="js/permanent.js"></script>
+    <script src="js/data_AF.js"></script>
+    <script src="js/data_TS.js"></script>
+    <script src="js/data_BA.js"></script>
+    <script src="js/data_SC.js"></script>
+    <script src="js/index.js"></script>
+    </body>
+</html>
