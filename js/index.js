@@ -410,6 +410,20 @@ var componentRoot = new Vue({
                             :data="PM[7].data"
                         ></permanent>
                     </td>
+                    <td>
+                        <permanent
+                            :text="PM[8].text"
+                            :data="PM[8].data"
+                        ></permanent>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <permanent
+                            :text="PM[9].text"
+                            :data="PM[9].data"
+                        ></permanent>
+                    </td>
                 </tr>
             </table>
         </div>
@@ -535,7 +549,8 @@ $(function () {
     function to64(num){
         var ret = "";
         var code = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz-_";
-        for(var i=0, i_len = Math.ceil(num.length/6); i<i_len; i++){
+        num += "000000";
+        for(var i=0, i_len = Math.ceil((num.length-6)/6); i<i_len; i++){
             ret += code[parseInt(num.substr(i*6, 6), 2)];
         }
         return ret;
@@ -555,6 +570,7 @@ $(function () {
         return ret;
     }
 
+    var saved_tree = {};    //保存されたスキルツリー
     (function init(){
         if(location.search != "" && location.search != "?"){
             var job = location.search.substr(1, 2);
@@ -574,10 +590,17 @@ $(function () {
             });
             change_point();
         }
+        //ローカルストレージから保存済みスキルツリーの読み出し
+        saved_tree = JSON.parse(localStorage.getItem('saved_tree'));
+        if(saved_tree == null || saved_tree.forEach == null)
+            return;
+            console.log(saved_tree)
+        saved_tree.forEach(function(value) {
+            console.log(value);
+        })
     })();
 
-    $('#geturl').on('click', () => {
-        var url = location.host + location.pathname + "?";
+    function getProp(){
         var n = "";
         $('div.skill').each((index, el) => {
             if($(el).hasClass('skill-active')){
@@ -586,7 +609,12 @@ $(function () {
                 n += "0";
             }
         });
-        url = url+$('#job').val()+to64(n);
+        return to64(n);
+    }
+
+    $('#geturl').on('click', () => {
+        var url = location.host + location.pathname + "?";
+        url = url+$('#job').val()+getProp();
         $('.content > p').text(url);
         $('.popup').addClass('show').fadeIn();
         $('.content').addClass('show').fadeIn();
@@ -633,5 +661,18 @@ $(function () {
         if(execCopy($('.content > p').text())){
             alert('コピーしました');
         }
+    });
+
+    $('#save').on('click', () => {
+        var p = getProp();
+        if(saved_tree == null)
+            saved_tree = {};
+        saved_tree[saved_tree.length] = p;
+        $('#saved_tree').append($('<option>').html("追加される項目名").val(p));
+        localStorage.setItem('saved_tree', JSON.stringify(saved_tree));
+    });
+
+    $('#delete').on('click', () => {
+        
     });
 })
