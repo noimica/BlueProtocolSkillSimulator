@@ -6,21 +6,21 @@ BA = {
             data: [
                 {
                     point: 0,
-                    title: "スラロームショットLv1",
-                    level: "???",
-                    exp: "前後左右のいずれかに回避をしながら矢を放つ。回避方向は入力している方向によって変えられる。"
+                    title: "アローラッシュLv1",
+                    level: "0",
+                    exp: "弓矢による最大4回連続の遠隔攻撃をする。2段目中にキー長押しで、5方向の前方扇形状攻撃に変化する。"
                 },
                 {
                     point: 1,
-                    title: "スラロームショットLv2",
-                    level: "???",
-                    exp: "???"
+                    title: "アローラッシュLv2",
+                    level: "6",
+                    exp: "3段目中にキー長押しで、土属性の範囲攻撃に変化する。"
                 },
                 {
                     point: 2,
-                    title: "スラロームショットLv3",
-                    level: "???",
-                    exp: "???"
+                    title: "アローラッシュLv3",
+                    level: "8",
+                    exp: "初撃にキー長押しで、前方範囲内にいるプレイヤーに移動速度アップを付与する。"
                 },
             ]
         },
@@ -29,21 +29,21 @@ BA = {
             data: [
                 {
                     point: 0,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "スラロームショットLv1",
+                    level: "0",
+                    exp: "スタミナを消費して移動しながら直線攻撃をする。スタミナが不足していると使用できない。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "スラロームショットLv2",
+                    level: "7",
+                    exp: "スタミナ消費による移動距離を延長する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "スラロームショットLv3",
+                    level: "9",
+                    exp: "スタミナ消費量を軽減する。"
                 },
             ]
         }
@@ -51,288 +51,288 @@ BA = {
     TC: [
         [
             {
-                imgsrc: "img/AF/TC1_1.png",
+                imgsrc: "img/BA/TC1_1.png",
                 data: [
                     {
                         point: 0,
                         title: "チャージアローLv1",
                         level: "0",
-                        exp: "前方に高威力の一矢を放つスキル。3段階までチャージすることができ、威力が増加する。エネミーの弱点に当てられれば、さらに威力が上がる。"
+                        exp: "威力の高い矢を直線状に放つ。"
                     },
                     {
                         point: 3,
                         title: "チャージアローLv2",
                         level: "14",
-                        exp: "???"
+                        exp: "2段階までチャージが可能になる。チャージ段階に応じて、スキル威力が上昇する。"
                     },
                     {
                         point: 6,
                         title: "チャージアローLv3",
                         level: "21",
-                        exp: "???"
+                        exp: "3段階までチャージが可能になる。チャージ段階に応じて、スキル威力が上昇する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "集中Lv1",
+                        level: "27",
+                        exp: "最大チャージまでの時間を短縮する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "全力射撃Lv1",
+                        level: "27",
+                        exp: "スキル威力が上昇するかわりに、最大チャージまでの時間が延長される。"
                     },
                 ]
             },
             {
-                imgsrc: "img/AF/TC1_2.png",
+                imgsrc: "img/BA/TC1_2.png",
                 data: [
                     {
                         point: 2,
-                        title: "ヒュプノブラストLv1",
+                        title: "ヒプノブラストLv1",
                         level: "10",
-                        exp: "ヒットしたエネミーを睡眠状態異常にする矢を放つ。一定時間経過するか、攻撃が当たると睡眠状態は解除される。"
+                        exp: "睡眠効果のある弓矢を放つ。エネミーをスリープ状態にする。"
                     },
                     {
                         point: 3,
-                        title: "ヒュプノブラストLv2",
-                        level: "???",
-                        exp: "???"
+                        title: "ヒプノブラストLv2",
+                        level: "14",
+                        exp: "貫通性能を付与する。"
                     },
                     {
                         point: 6,
-                        title: "ヒュプノブラストLv3",
-                        level: "???",
-                        exp: "???"
+                        title: "ヒプノブラストLv3",
+                        level: "21",
+                        exp: "2段階までチャージが可能になる。チャージ段階に応じて、スキル威力が上昇する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "ダメージブーストLv1",
+                        level: "27",
+                        exp: "スキル威力が上昇するかわりに、貫通性能がなくなる。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "クイックドライブLv1",
+                        level: "27",
+                        exp: "最大チャージまでの時間を短縮する。"
                     },
                 ]
             }
         ],
         [
             {
-                imgsrc: "img/AF/TC2_1.png",
+                imgsrc: "img/BA/TC2_1.png",
                 data: [
                     {
                         point: 1,
                         title: "スタンビードアローLv1",
                         level: "2",
-                        exp: "エネミーを追尾する毒矢を連続して放つ。ヒット時にエネミーを毒状態にする。ロックオンし、矢を一体に集中させることも可能。"
+                        exp: "近くのエネミーに誘導する矢を4本放つ。"
                     },
                     {
                         point: 3,
                         title: "スタンビードアローLv2",
-                        level: "???",
-                        exp: "???"
+                        level: "15",
+                        exp: "矢の発射数が6本になる。"
                     },
                     {
                         point: 6,
                         title: "スタンビードアローLv3",
-                        level: "???",
-                        exp: "???"
+                        level: "22",
+                        exp: "誘導する矢を発射した後に、直進する矢を1本追加発動可能になる。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "ポイゾニックLv1",
+                        level: "28",
+                        exp: "エネミーを毒状態にする。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "貫通Lv1",
+                        level: "28",
+                        exp: "貫通状態を付与する。"
                     },
                 ]
             },
             {
-                imgsrc: "img/AF/TC2_2.png",
+                imgsrc: "img/BA/TC2_2.png",
                 data: [
                     {
                         point: 2,
-                        title: "???",
+                        title: "ネガティブレゾナンスLv1",
                         level: "10",
-                        exp: "攻撃がヒットしたエネミーの状態異常を周りのエネミーに拡散するスキル"
+                        exp: "直進する矢を放つ。ヒットしたエネミーが属性状態異常中の場合、周囲にもその状態異常を拡散する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "ネガティブレゾナンスLv2",
+                        level: "15",
+                        exp: "属性状態異常の拡散範囲を拡大する。"
                     },
                     {
                         point: 6,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "ネガティブレゾナンスLv3",
+                        level: "22",
+                        exp: "初撃後、追加攻撃可能になる。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "レンジアタックLv1",
+                        level: "28",
+                        exp: "属性状態異常の拡散に成功すると、追加ダメージが発生する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "チェーンインフェクションLv1",
+                        level: "28",
+                        exp: "貫通性能を付与する。"
                     },
                 ]
             }
         ],
         [
             {
-                imgsrc: "img/AF/TC3_1.png",
+                imgsrc: "img/BA/TC3_1.png",
                 data: [
                     {
                         point: 1,
                         title: "リーサルシャワーLv1",
                         level: "3",
-                        exp: "ねらいを合わせた範囲に矢の雨を降らせる。最大3段階までチャージが可能で、チャージするほど矢を降らせる範囲と時間が長くなる。"
+                        exp: "指定地点に矢の雨を降り注ぐ。範囲内にいるエネミーにダメージを与え続ける。"
                     },
                     {
                         point: 3,
                         title: "リーサルシャワーLv2",
-                        level: "???",
-                        exp: "???"
+                        level: "16",
+                        exp: "2段階までチャージが可能になる。チャージ段階に応じて、攻撃範囲が拡大し、スキル威力が上昇する。"
                     },
                     {
                         point: 6,
                         title: "リーサルシャワーLv3",
-                        level: "???",
-                        exp: "???"
+                        level: "23",
+                        exp: "3段階までチャージが可能になる。チャージ段階に応じて、攻撃範囲が拡大し、スキル威力が上昇する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "集中豪雨Lv1",
+                        level: "29",
+                        exp: "攻撃範囲を縮小して、スキル威力を上昇する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "アクセラレーションLv1",
+                        level: "29",
+                        exp: "最大チャージまでの時間を短縮する。"
                     },
                 ]
             },
             {
-                imgsrc: "img/AF/TC3_2.png",
+                imgsrc: "img/BA/TC3_2.png",
                 data: [
                     {
                         point: 2,
                         title: "ダストフォースLv1",
-                        level: "???",
-                        exp: "???"
+                        level: "10",
+                        exp: "指定地点に対して範囲攻撃をする。土属性ダメージを与え続け、状態異常の効果を強化する。"
                     },
                     {
                         point: 3,
                         title: "ダストフォースLv2",
-                        level: "???",
-                        exp: "???"
+                        level: "16",
+                        exp: "2段階までチャージ可能になる。チャージ段階に応じて、ダメージ範囲の持続時間を延長する。"
                     },
                     {
                         point: 6,
                         title: "ダストフォースLv3",
-                        level: "???",
-                        exp: "???"
+                        level: "23",
+                        exp: "3段階までチャージ可能になる。チャージ段階に応じて、ダメージ範囲の持続時間を延長する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "急速練気Lv1",
+                        level: "29",
+                        exp: "最大チャージまでの時間を短縮する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "ディレイLV1",
+                        level: "29",
+                        exp: "エネミーを移動速度ダウン状態にする。"
                     },
                 ]
             }
         ],
         [
             {
-                imgsrc: "img/AF/TC4_1.png",
+                imgsrc: "img/BA/TC4_1.png",
                 data: [
                     {
                         point: 1,
-                        title: "ハンタースピリットLv1",
+                        title: "ヒールレインLv1",
                         level: "4",
-                        exp: "精神を研ぎ澄まし、エネミーから狙われにくくなる。また自分のチャージスキルの時間を短縮し、パーティ全体のスキルインターバルを短縮する。"
+                        exp: "指定地点にHP回復効果のある範囲を生成する。"
                     },
                     {
                         point: 3,
-                        title: "ハンタースピリットLv2",
-                        level: "???",
-                        exp: "???"
+                        title: "ヒールレインLv２",
+                        level: "17",
+                        exp: "2段階までチャージ可能になる。チャージ段階に応じて、HP回復量が上昇し、効果範囲が拡大する。"
                     },
                     {
                         point: 6,
-                        title: "ハンタースピリットLv3",
-                        level: "???",
-                        exp: "???"
+                        title: "ヒールレインLv３",
+                        level: "24",
+                        exp: "3段階までチャージ可能になる。チャージ段階に応じて、HP回復量が上昇し、効果範囲が拡大する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "スケールアップLV1",
+                        level: "30",
+                        exp: "効果範囲を拡大する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "スナイプヒールLv1",
+                        level: "30",
+                        exp: "効果範囲を縮小して、HP回復効果を上昇する。"
                     },
                 ]
             },
             {
-                imgsrc: "img/AF/TC4_2.png",
+                imgsrc: "img/BA/TC4_2.png",
                 data: [
                     {
                         point: 2,
-                        title: "ヒールレインLv1",
-                        level: "???",
-                        exp: "指定した範囲に回復効果のある雨を降らせる。3段階までチャージが可能で、チャージするほど回復効果の時間が延長。"
+                        title: "ハンタースピリットLv1",
+                        level: "10",
+                        exp: "一定時間、自身にクイックインターバル状態を付与する。(レギュラー/タクティカルスキルのインターバルが早くなる)"
                     },
                     {
                         point: 3,
-                        title: "ヒールレインLv2",
-                        level: "???",
-                        exp: "???"
+                        title: "ハンタースピリットLv２",
+                        level: "17",
+                        exp: "ハンタースピリットの効果時間を延長する。"
                     },
                     {
                         point: 6,
-                        title: "ヒールレインLv3",
-                        level: "???",
-                        exp: "???"
+                        title: "ハンタースピリットLv3",
+                        level: "24",
+                        exp: "ハンタースピリットのインターバルを短縮する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "猛攻の狼煙Lv1",
+                        level: "30",
+                        exp: "ハンタースピリットの効果を、自身と周囲のパーティーメンバーに付与する。"
                     },
                     {
                         point: 3,
-                        title: "???",
-                        level: "???",
-                        exp: "???"
+                        title: "シャープネスLv1",
+                        level: "30",
+                        exp: "一定時間、攻撃力アップ状態を付与する。"
                     },
                 ]
             }
@@ -344,7 +344,7 @@ BA = {
                 point: 2,
                 title: "モータルグラビティLv1",
                 level: "5",
-                exp: "着弾した場所に強大な引力の力場を出現させる。周辺のエネミーを一定時間引き寄せ、ダメージを与え続ける。"
+                exp: "着弾地点を中心にして周囲にいるエネミーを引き寄せる。範囲内にいるエネミーにダメージを与え続ける。"
             }
     },
     TCAB: 
@@ -354,21 +354,21 @@ BA = {
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "最大STアップLv1",
+                    level: "12",
+                    exp: "STの最大値が上昇する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "最大STアップLv2",
+                    level: "19",
+                    exp: "STの最大値が上昇する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "最大STアップLv3",
+                    level: "25",
+                    exp: "STの最大値が上昇する。"
                 },
             ]
         },
@@ -377,21 +377,21 @@ BA = {
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回避距離アップLv1",
+                    level: "12",
+                    exp: "回避距離を延長する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回避距離アップLv2",
+                    level: "19",
+                    exp: "回避距離を延長する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回避距離アップLv3",
+                    level: "25",
+                    exp: "回避距離を延長する。"
                 },
             ]
         },
@@ -400,21 +400,21 @@ BA = {
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "被救護時HP量アップLv1",
+                    level: "12",
+                    exp: "救護された時のHP量が上昇する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "被救護時HP量アップLv2",
+                    level: "19",
+                    exp: "救護された時のHP量が上昇する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "被救護時HP量アップLv3",
+                    level: "25",
+                    exp: "救護された時のHP量が上昇する。"
                 },
             ]
         },
@@ -423,67 +423,67 @@ BA = {
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "ULTスキルインターバル短縮Lv1",
+                    level: "12",
+                    exp: "ULTスキルのインターバルを短縮する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "ULTスキルインターバル短縮Lv2",
+                    level: "19",
+                    exp: "ULTスキルのインターバルを短縮する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "ULTスキルインターバル短縮Lv3",
+                    level: "25",
+                    exp: "ULTスキルのインターバルを短縮する。"
                 },
             ]
         },
         {
-            imgsrc: "img/AF/TCAB5.png",
+            imgsrc: "img/BA/TCAB5.png",
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "救護性能アップLv1",
+                    level: "12",
+                    exp: "救護にかかる時間を短縮する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "救護性能アップLv2",
+                    level: "19",
+                    exp: "救護にかかる時間を短縮する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "救護性能アップLv3",
+                    level: "25",
+                    exp: "救護にかかる時間を短縮する。"
                 },
             ]
         },
         {
-            imgsrc: "img/AF/TCAB6.png",
+            imgsrc: "img/BA/TCAB6.png",
             data: [
                 {
                     point: 1,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回復量アップLv1",
+                    level: "12",
+                    exp: "自身のHP回復アクションの効果料が上昇する。"
                 },
                 {
                     point: 2,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回復量アップLv2",
+                    level: "19",
+                    exp: "自身のHP回復アクションの効果料が上昇する。"
                 },
                 {
                     point: 3,
-                    title: "???",
-                    level: "???",
-                    exp: "???"
+                    title: "回復量アップLv3",
+                    level: "25",
+                    exp: "自身のHP回復アクションの効果料が上昇する。"
                 },
             ]
         }

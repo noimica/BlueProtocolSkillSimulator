@@ -51,7 +51,7 @@ SC = {
     TC: [
         [
             {
-                imgsrc: "img/AF/TC1_1.png",
+                imgsrc: "img/SC/TC1_1.png",
                 data: [
                     {
                         point: 0,
@@ -86,7 +86,7 @@ SC = {
                 ]
             },
             {
-                imgsrc: "img/AF/TC1_2.png",
+                imgsrc: "img/SC/TC1_2.png",
                 data: [
                     {
                         point: 2,
@@ -123,7 +123,7 @@ SC = {
         ],
         [
             {
-                imgsrc: "img/AF/TC2_1.png",
+                imgsrc: "img/SC/TC2_1.png",
                 data: [
                     {
                         point: 1,
@@ -158,7 +158,7 @@ SC = {
                 ]
             },
             {
-                imgsrc: "img/AF/TC2_2.png",
+                imgsrc: "img/SC/TC2_2.png",
                 data: [
                     {
                         point: 2,
@@ -195,7 +195,7 @@ SC = {
         ],
         [
             {
-                imgsrc: "img/AF/TC3_1.png",
+                imgsrc: "img/SC/TC3_1.png",
                 data: [
                     {
                         point: 1,
@@ -230,7 +230,7 @@ SC = {
                 ]
             },
             {
-                imgsrc: "img/AF/TC3_2.png",
+                imgsrc: "img/SC/TC3_2.png",
                 data: [
                     {
                         point: 2,
@@ -267,7 +267,7 @@ SC = {
         ],
         [
             {
-                imgsrc: "img/AF/TC4_1.png",
+                imgsrc: "img/SC/TC4_1.png",
                 data: [
                     {
                         point: 1,
@@ -302,7 +302,7 @@ SC = {
                 ]
             },
             {
-                imgsrc: "img/AF/TC4_2.png",
+                imgsrc: "img/SC/TC4_2.png",
                 data: [
                     {
                         point: 2,
@@ -442,7 +442,7 @@ SC = {
             ]
         },
         {
-            imgsrc: "img/AF/TCAB5.png",
+            imgsrc: "img/SC/TCAB5.png",
             data: [
                 {
                     point: 1,
@@ -465,7 +465,7 @@ SC = {
             ]
         },
         {
-            imgsrc: "img/AF/TCAB6.png",
+            imgsrc: "img/SC/TCAB6.png",
             data: [
                 {
                     point: 1,
