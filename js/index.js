@@ -669,6 +669,8 @@ $(function () {
     $('#save').on('click', () => {
         var text = $('#job option:selected').text();
         var i = 1;
+        if(saved_tree == null)
+            saved_tree = {};
         while(saved_tree[text+i]) i++;
         //入力
         var r = window.prompt("保存名を入力してください。", text+i);
@@ -676,8 +678,6 @@ $(function () {
             return;
         //保存情報の収集
         var p = $('#job').val()+getProp();
-        if(saved_tree == null)
-            saved_tree = {};
         saved_tree[r] = p;
         //セレクトボックスに追加
         $('#saved_tree').append($('<option>').html(r).val(p));
