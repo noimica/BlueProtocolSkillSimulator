@@ -570,34 +570,37 @@ $(function () {
         return ret;
     }
 
+    function display_tree(str){
+        var job = str.substr(0, 2);
+        $("#job").val(job);
+        console.log(job)
+        jobchange(job);
+
+        var s = str.substr(2);
+        s = to2(s);
+        console.log(s);
+        $('div.skill').each((index, el) => {
+            if(s[index] == "1"){
+                $(el).toggleClass('skill-active', true);
+            }else{
+
+            }
+        });
+        change_point();
+    }
+
     var saved_tree = {};    //保存されたスキルツリー
     (function init(){
         if(location.search != "" && location.search != "?"){
-            var job = location.search.substr(1, 2);
-            $("#job").val(job);
-            console.log(job)
-            jobchange(job);
-
-            var s = location.search.substr(3);
-            s = to2(s);
-            console.log(s);
-            $('div.skill').each((index, el) => {
-                if(s[index] == "1"){
-                    $(el).toggleClass('skill-active', true);
-                }else{
-
-                }
-            });
-            change_point();
+            display_tree(location.search.substr(1));
         }
         //ローカルストレージから保存済みスキルツリーの読み出し
         saved_tree = JSON.parse(localStorage.getItem('saved_tree'));
-        if(saved_tree == null || saved_tree.forEach == null)
+        if(saved_tree == null)
             return;
-            console.log(saved_tree)
-        saved_tree.forEach(function(value) {
-            console.log(value);
-        })
+        for(let key in saved_tree){
+            $('#saved_tree').append('<option value="'+saved_tree[key]+'">'+key+'</option>');
+        }
     })();
 
     function getProp(){
@@ -664,15 +667,39 @@ $(function () {
     });
 
     $('#save').on('click', () => {
-        var p = getProp();
+        var text = $('#job option:selected').text();
+        var i = 1;
+        while(saved_tree[text+i]) i++;
+        //入力
+        var r = window.prompt("保存名を入力してください。", text+i);
+        if(r == null)
+            return;
+        //保存情報の収集
+        var p = $('#job').val()+getProp();
         if(saved_tree == null)
             saved_tree = {};
-        saved_tree[saved_tree.length] = p;
-        $('#saved_tree').append($('<option>').html("追加される項目名").val(p));
+        saved_tree[r] = p;
+        //セレクトボックスに追加
+        $('#saved_tree').append($('<option>').html(r).val(p));
+        //保存
         localStorage.setItem('saved_tree', JSON.stringify(saved_tree));
     });
 
     $('#delete').on('click', () => {
-        
+        if(!saved_tree || !Object.keys(saved_tree).length)
+            return;
+        var tx = $('#saved_tree option:selected').text();
+        if(!window.confirm('「'+tx+'」を削除してもよろしいですか？'))
+            return;
+        saved_tree[tx] = undefined;
+        localStorage.setItem('saved_tree', JSON.stringify(saved_tree));
+        $('#saved_tree option:selected').remove();
+    });
+
+    $('#load').on('click', () => {
+        if(!saved_tree || !Object.keys(saved_tree).length)
+            return;
+        var tx = $('#saved_tree option:selected').text();
+        display_tree(saved_tree[tx]);
     });
 })
